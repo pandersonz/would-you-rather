@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
+import './RepoQuestions.css';
 import Question from './Question';
 
 class RepoQuestions extends Component{
     render(){
         return(
-            <div class='repoQuestion'>
-            <h1>Answerd</h1>
+            <div className='repoQuestion'>
             <Question/>     
             <Question/>
             </div>
+            
         );
     }
 }
