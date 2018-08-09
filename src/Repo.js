@@ -7,9 +7,8 @@ class Repo extends Component{
     render(){
         return(
             <div>
-            <Nav/>
-                <div className='repo'>
-            
+            <Nav active={this.props.active}/>
+                <div className='repo'>            
                 <h1>Answerd</h1>
                 <RepoQuestions/>
                 <h1>without Answerd</h1>

@@ -1,12 +1,25 @@
 import React, { Component } from 'react';
 import './App.css';
 import Repo from './Repo';
+import UserList from './UserList';
 
 class App extends Component {
+  state={
+    isActive=true
+  }
+  changeIsActive = (is)=>{this.setState({ isActive: is });};
   render() {
     return (
       <div className="App">
-        <Repo/>
+     { 
+      this.state.isActive===false&&
+        <Repo active={changeIsActive}/>
+      }
+      
+      {this.state.isActive===true&&
+        <UserList active={changeIsActive}/>
+      }
+    } 
       </div>
     );
   }
