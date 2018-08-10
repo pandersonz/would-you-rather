@@ -6,7 +6,7 @@ class ListUser extends Component{
         return(
             <div>
                 <div className='listUser'>
-                    <div>Usuario1</div>
+                    <div onClick={}>Usuario1</div>
                     <div>Usuario2</div>
                     <div>Usuario3</div>
                 </div>
@@ -16,4 +16,4 @@ class ListUser extends Component{
     }
 }
 
-export default Repo
+export default ListUser

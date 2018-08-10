@@ -3,11 +3,12 @@ import './App.css';
 import Repo from './Repo';
 import UserList from './UserList';
 
+let changeIsActive = (is)=>{this.setState({ isActive: is });};
 class App extends Component {
   state={
-    isActive=true
+    isActive: true
   }
-  changeIsActive = (is)=>{this.setState({ isActive: is });};
+ 
   render() {
     return (
       <div className="App">

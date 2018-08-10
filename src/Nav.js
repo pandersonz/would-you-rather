@@ -6,7 +6,7 @@ class Nav extends Component{
         return(
             <div className='nav'>
             <div className='navVoid'></div>
-            <p onClick={}>user</p>
+            <p>user</p>
             </div>
 
         );
