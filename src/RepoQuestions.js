@@ -3,6 +3,10 @@ import './RepoQuestions.css';
 import Question from './Question';
 
 class RepoQuestions extends Component{
+    state={
+        cantQuestion: '',
+        objQuestion: []
+    }
     render(){
         return(
             <div className='repoQuestion'>
